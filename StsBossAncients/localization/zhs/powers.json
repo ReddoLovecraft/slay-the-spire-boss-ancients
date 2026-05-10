@@ -1,0 +1,9 @@
+{
+  "STSBOSSANCIENTS-FORM_SHIFT_POWER.title": "形态转换",
+  "STSBOSSANCIENTS-FORM_SHIFT_POWER.description": "受到伤害时减少等量层数（即使被[gold]格挡[/gold]）。当层数被移除时，获得该效果施加时的原始层数点[gold]格挡[/gold]并获得原始层数一半层[gold]荆棘[/gold]，然后获得原始层数+10层[gold]形态转换[/gold]。",
+  "STSBOSSANCIENTS-FORM_SHIFT_POWER.smartDescription": "受到伤害时减少等量层数（即使被[gold]格挡[/gold]）。当层数被移除时，获得该效果施加时的原始层数点[gold]格挡[/gold]并获得原始层数一半层[gold]荆棘[/gold]，然后获得原始层数+10层[gold]形态转换[/gold]。\n当前层数：[blue]{Amount}[/blue]。",
+
+  "STSBOSSANCIENTS-LUBRICATED_POWER.title": "特制滑溜",
+  "STSBOSSANCIENTS-LUBRICATED_POWER.description": "受到攻击伤害时，将该次伤害改为[blue]1[/blue]点，然后减少[blue]1[/blue]层。",
+  "STSBOSSANCIENTS-LUBRICATED_POWER.smartDescription": "受到攻击伤害时，将该次伤害改为[blue]1[/blue]点，然后减少[blue]1[/blue]层。\n剩余层数：[blue]{Amount}[/blue]。"
+}

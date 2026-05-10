@@ -1,0 +1,11 @@
+{
+  "id": "StsBossAncients",
+  "name": "塔1BOSS先古之民",
+  "author": "Reddo",
+  "description": "加入了来自杀戮尖塔一代的BOSS作为新的先古之民。",
+  "version": "0.1",
+  "has_pck": true,
+  "has_dll": true,
+  "dependencies": [ "BaseLib", "Patchoulib" ],
+  "affects_gameplay": true
+}

@@ -1,0 +1,13 @@
+{
+  "STSBOSSANCIENTS-FIRE_ENCHANTMENT.title": "火焰",
+  "STSBOSSANCIENTS-FIRE_ENCHANTMENT.extraCardText": "造成伤害时，给予敌人等同于未被[gold]格挡[/gold]的伤害的[gold]点燃[/gold]。",
+  "STSBOSSANCIENTS-FIRE_ENCHANTMENT.description": "造成伤害时，给予敌人等同于未被[gold]格挡[/gold]的伤害的[gold]点燃[/gold]。",
+
+  "STSBOSSANCIENTS-SCORCHING_ENCHANTMENT.title": "灼热",
+  "STSBOSSANCIENTS-SCORCHING_ENCHANTMENT.extraCardText": "这张牌可以被无限[gold]升级[/gold]。",
+  "STSBOSSANCIENTS-SCORCHING_ENCHANTMENT.description": "这张牌可以被无限[gold]升级[/gold]。",
+
+  "STSBOSSANCIENTS-PROLIFERATION_ENCHANTMENT.title": "增生",
+  "STSBOSSANCIENTS-PROLIFERATION_ENCHANTMENT.extraCardText": "打出时，将一张这张牌的复制品洗入你的[gold]抽牌堆[/gold]中。",
+  "STSBOSSANCIENTS-PROLIFERATION_ENCHANTMENT.description": "打出时，将一张这张牌的复制品洗入你的[gold]抽牌堆[/gold]中。"
+}
