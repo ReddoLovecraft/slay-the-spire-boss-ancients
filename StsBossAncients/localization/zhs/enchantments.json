@@ -9,5 +9,21 @@
 
   "STSBOSSANCIENTS-PROLIFERATION_ENCHANTMENT.title": "增生",
   "STSBOSSANCIENTS-PROLIFERATION_ENCHANTMENT.extraCardText": "打出时，将一张这张牌的复制品洗入你的[gold]抽牌堆[/gold]中。",
-  "STSBOSSANCIENTS-PROLIFERATION_ENCHANTMENT.description": "打出时，将一张这张牌的复制品洗入你的[gold]抽牌堆[/gold]中。"
+  "STSBOSSANCIENTS-PROLIFERATION_ENCHANTMENT.description": "打出时，将一张这张牌的复制品洗入你的[gold]抽牌堆[/gold]中。",
+
+  "STSBOSSANCIENTS-MADNESS_ENCHANTMENT.title": "疯狂",
+  "STSBOSSANCIENTS-MADNESS_ENCHANTMENT.extraCardText": "这张卡牌可以被免费打出。",
+  "STSBOSSANCIENTS-MADNESS_ENCHANTMENT.description": "这张卡牌可以被免费打出。",
+
+  "STSBOSSANCIENTS-ONE_HEART_ENCHANTMENT.title": "一心",
+  "STSBOSSANCIENTS-ONE_HEART_ENCHANTMENT.extraCardText": "打出时，一并打出所有带有[purple]一心[/purple][gold]附魔[/gold]的卡牌。",
+  "STSBOSSANCIENTS-ONE_HEART_ENCHANTMENT.description": "打出时，一并打出所有带有[purple]一心[/purple][gold]附魔[/gold]的卡牌。",
+
+  "STSBOSSANCIENTS-ECHO_ENCHANTMENT.title": "回响",
+  "STSBOSSANCIENTS-ECHO_ENCHANTMENT.extraCardText": "首次打出后，在你的回合开始时将其打出(无论其在何处)。",
+  "STSBOSSANCIENTS-ECHO_ENCHANTMENT.description": "首次打出后，在你的回合开始时将其打出(无论其在何处)。",
+
+  "STSBOSSANCIENTS-SACRIFICE_ENCHANTMENT.title": "献祭",
+  "STSBOSSANCIENTS-SACRIFICE_ENCHANTMENT.extraCardText": "[gold]斩杀[/gold]时，将这张牌在本局游戏中造成的伤害永久增加[blue]5[/blue]点。",
+  "STSBOSSANCIENTS-SACRIFICE_ENCHANTMENT.description": "[gold]斩杀[/gold]时，将这张牌在本局游戏中造成的伤害永久增加[blue]5[/blue]点。"
 }

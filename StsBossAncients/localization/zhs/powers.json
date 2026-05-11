@@ -5,5 +5,13 @@
 
   "STSBOSSANCIENTS-LUBRICATED_POWER.title": "特制滑溜",
   "STSBOSSANCIENTS-LUBRICATED_POWER.description": "受到攻击伤害时，将该次伤害改为[blue]1[/blue]点，然后减少[blue]1[/blue]层。",
-  "STSBOSSANCIENTS-LUBRICATED_POWER.smartDescription": "受到攻击伤害时，将该次伤害改为[blue]1[/blue]点，然后减少[blue]1[/blue]层。\n剩余层数：[blue]{Amount}[/blue]。"
+  "STSBOSSANCIENTS-LUBRICATED_POWER.smartDescription": "受到攻击伤害时，将该次伤害改为[blue]1[/blue]点，然后减少[blue]1[/blue]层。\n剩余层数：[blue]{Amount}[/blue]。",
+
+  "STSBOSSANCIENTS-LOSE_ENERGY_NEXT_TURN_POWER.title": "能量亏空",
+  "STSBOSSANCIENTS-LOSE_ENERGY_NEXT_TURN_POWER.description": "在你的回合开始时，失去[blue]{Amount}[/blue]点能量，然后移除。",
+  "STSBOSSANCIENTS-LOSE_ENERGY_NEXT_TURN_POWER.smartDescription": "在你的回合开始时，失去[blue]{Amount}[/blue]点能量，然后移除。",
+
+  "STSBOSSANCIENTS-SILENT_GOLD_POWER.title": "沉默之金",
+  "STSBOSSANCIENTS-SILENT_GOLD_POWER.description": "免疫所有伤害，并在下回合开始时获得[blue]{Amount}[/blue]点能量。",
+  "STSBOSSANCIENTS-SILENT_GOLD_POWER.smartDescription": "免疫所有伤害，并在下回合开始时获得[blue]{Amount}[/blue]点能量。"
 }

@@ -21,7 +21,7 @@ namespace StsBossAncients.Scripts.Powers
 
 	public static async Task<LubricatedPower> ApplyOrRefresh(Creature target, int amount, Creature? applier, CardModel? cardSource)
 	{
-		return await PowerCmd.Apply<LubricatedPower>(target, amount, applier, cardSource);
+		return (await PowerCmd.Apply<LubricatedPower>(target, amount, applier, cardSource))!;
 	}
 
 		public override async Task BeforeDamageReceived(PlayerChoiceContext choiceContext, Creature target, decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource)

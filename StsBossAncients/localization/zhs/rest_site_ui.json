@@ -1,0 +1,13 @@
+{
+  "OPTION_COPPER_BALL_TAKE_OUT.name": "取出卡牌",
+  "OPTION_COPPER_BALL_TAKE_OUT.description": "取出[gold]铜球[/gold]中[orange]凝滞[/orange]的卡牌。",
+  "OPTION_COPPER_BALL_PUT_IN.name": "放入卡牌",
+  "OPTION_COPPER_BALL_PUT_IN.description": "选择[blue]2[/blue]张牌[orange]凝滞[/orange]。",
+
+  "OPTION_MASSARETH_RITUAL.name": "举行仪式",
+  "OPTION_MASSARETH_RITUAL.description": "每场战斗开始时获得+[blue]6[/blue]层[gold]仪式[/gold]。",
+
+  "OPTION_SCRIBING_INSTRUMENT_COPY.name": "眷录",
+  "OPTION_SCRIBING_INSTRUMENT_COPY.description": "选择[blue]1[/blue]件你拥有的[gold]遗物[/gold]，获得[blue]1[/blue]件复制品。"
+}
+

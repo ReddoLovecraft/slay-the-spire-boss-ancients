@@ -32,11 +32,14 @@ namespace StsBossAncients.Scripts.Powers
 	{
 		if (target.HasPower<FormShiftPower>())
 		{
-			FormShiftPower existing = target.GetPower<FormShiftPower>();
-			existing.SetAmountUnsafe(existing.Amount + amount);
-			return existing;
+			FormShiftPower? existing = target.GetPower<FormShiftPower>();
+			if (existing != null)
+			{
+				existing.SetAmountUnsafe(existing.Amount + amount);
+				return existing;
+			}
 		}
-		return await PowerCmd.Apply<FormShiftPower>(target, amount, applier, cardSource);
+		return (await PowerCmd.Apply<FormShiftPower>(target, amount, applier, cardSource))!;
 	}
 
 	public override Task AfterApplied(Creature? applier, CardModel? cardSource)

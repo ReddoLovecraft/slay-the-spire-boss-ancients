@@ -16,11 +16,11 @@ namespace StsBossAncients.Scripts.Relics
 	{
     	public override RelicRarity Rarity => RelicRarity.Ancient;
 		protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(CardKeyword.Retain)];
-		public override async Task BeforeTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
+		public override Task BeforeTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
 		{
 			if (side != Owner.Creature.Side)
 			{
-				return;
+				return Task.CompletedTask;
 			}
 
 			bool triggered = false;
@@ -43,8 +43,8 @@ namespace StsBossAncients.Scripts.Relics
 			{
 				Flash();
 			}
+			return Task.CompletedTask;
 		}
 	}
 }
-
 
