@@ -1,0 +1,29 @@
+{
+  "STSBOSSANCIENTS-FIRE_ENCHANTMENT.title": "Fire",
+  "STSBOSSANCIENTS-FIRE_ENCHANTMENT.extraCardText": "When dealing damage, apply [gold]Ignite[/gold] equal to the unblocked damage dealt.",
+  "STSBOSSANCIENTS-FIRE_ENCHANTMENT.description": "When dealing damage, apply [gold]Ignite[/gold] equal to the unblocked damage dealt.",
+
+  "STSBOSSANCIENTS-SCORCHING_ENCHANTMENT.title": "Scorching",
+  "STSBOSSANCIENTS-SCORCHING_ENCHANTMENT.extraCardText": "This card can be [gold]Upgraded[/gold] infinitely.",
+  "STSBOSSANCIENTS-SCORCHING_ENCHANTMENT.description": "This card can be [gold]Upgraded[/gold] infinitely.",
+
+  "STSBOSSANCIENTS-PROLIFERATION_ENCHANTMENT.title": "Proliferation",
+  "STSBOSSANCIENTS-PROLIFERATION_ENCHANTMENT.extraCardText": "When played, shuffle a copy of this card into your [gold]Draw Pile[/gold].",
+  "STSBOSSANCIENTS-PROLIFERATION_ENCHANTMENT.description": "When played, shuffle a copy of this card into your [gold]Draw Pile[/gold].",
+
+  "STSBOSSANCIENTS-MADNESS_ENCHANTMENT.title": "Madness",
+  "STSBOSSANCIENTS-MADNESS_ENCHANTMENT.extraCardText": "This card can be played for free.",
+  "STSBOSSANCIENTS-MADNESS_ENCHANTMENT.description": "This card can be played for free.",
+
+  "STSBOSSANCIENTS-ONE_HEART_ENCHANTMENT.title": "One Heart",
+  "STSBOSSANCIENTS-ONE_HEART_ENCHANTMENT.extraCardText": "When played, also play all cards with [purple]One Heart[/purple] [gold]Enchantment[/gold].",
+  "STSBOSSANCIENTS-ONE_HEART_ENCHANTMENT.description": "When played, also play all cards with [purple]One Heart[/purple] [gold]Enchantment[/gold].",
+
+  "STSBOSSANCIENTS-ECHO_ENCHANTMENT.title": "Echo",
+  "STSBOSSANCIENTS-ECHO_ENCHANTMENT.extraCardText": "After being played for the first time, play it at the start of your turn (wherever it is).",
+  "STSBOSSANCIENTS-ECHO_ENCHANTMENT.description": "After being played for the first time, play it at the start of your turn (wherever it is).",
+
+  "STSBOSSANCIENTS-SACRIFICE_ENCHANTMENT.title": "Sacrifice",
+  "STSBOSSANCIENTS-SACRIFICE_ENCHANTMENT.extraCardText": "On [gold]kill[/gold], permanently increase this card's damage by [blue]5[/blue] for this run.",
+  "STSBOSSANCIENTS-SACRIFICE_ENCHANTMENT.description": "On [gold]kill[/gold], permanently increase this card's damage by [blue]5[/blue] for this run."
+}

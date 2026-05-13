@@ -1,0 +1,13 @@
+{
+  "STSBOSSANCIENTS-FORM_SHIFT_POWER.title": "Form Shift",
+  "STSBOSSANCIENTS-FORM_SHIFT_POWER.description": "When taking damage, reduce an equal amount of stacks (even if [gold]Blocked[/gold]). When the stacks are removed, gain [gold]Block[/gold] equal to the original stack amount at the time of application, gain half that amount of [gold]Thorns[/gold], then gain original stacks +10 [gold]Form Shift[/gold].",
+  "STSBOSSANCIENTS-FORM_SHIFT_POWER.smartDescription": "When taking damage, reduce an equal amount of stacks (even if [gold]Blocked[/gold]). When the stacks are removed, gain [gold]Block[/gold] equal to the original stack amount at the time of application, gain half that amount of [gold]Thorns[/gold], then gain original stacks +10 [gold]Form Shift[/gold].\nCurrent stacks: [blue]{Amount}[/blue].",
+
+  "STSBOSSANCIENTS-LUBRICATED_POWER.title": "Special Slippery",
+  "STSBOSSANCIENTS-LUBRICATED_POWER.description": "When taking attack damage, change that damage to [blue]1[/blue], then reduce [blue]1[/blue] stack.",
+  "STSBOSSANCIENTS-LUBRICATED_POWER.smartDescription": "When taking attack damage, change that damage to [blue]1[/blue], then reduce [blue]1[/blue] stack.\nRemaining stacks: [blue]{Amount}[/blue].",
+
+  "STSBOSSANCIENTS-LOSE_ENERGY_NEXT_TURN_POWER.title": "Energy Deficit",
+  "STSBOSSANCIENTS-LOSE_ENERGY_NEXT_TURN_POWER.description": "At the start of your next turn, lose an amount of energy.",
+  "STSBOSSANCIENTS-LOSE_ENERGY_NEXT_TURN_POWER.smartDescription": "At the start of your next turn, lose {Amount:energyIcons()}."
+}

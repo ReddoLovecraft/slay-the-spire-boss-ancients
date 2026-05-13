@@ -24,7 +24,7 @@ public sealed class RitualStrike : CustomCardModel
 	};
 
 	public RitualStrike()
-		: base(1, CardType.Attack, CardRarity.Ancient, TargetType.AnyEnemy)
+		: base(1, CardType.Attack, CardRarity.Basic, TargetType.AnyEnemy)
 	{
 	}
 

@@ -1,0 +1,14 @@
+{
+	"STSBOSSANCIENTS-PAIN.title": "Pain",
+	"STSBOSSANCIENTS-PAIN.description": "While in hand, lose [blue]1[/blue] HP each time you play another card.",
+	"STSBOSSANCIENTS-TRUE_HYPERBEAM.title": "True Hyper Beam",
+	"STSBOSSANCIENTS-TRUE_HYPERBEAM.description": "Deal {Damage:diff()} damage to all enemies.\nAt the start of your next turn, lose {Energy:energyIcons()}.{IfUpgraded:show:|\nEnd your turn.}",
+	"STSBOSSANCIENTS-TRAINING_STRIKE.title": "Training Strike",
+	"STSBOSSANCIENTS-TRAINING_STRIKE.description": "Deal {Damage:diff()} damage.\nOn [gold]kill[/gold], [gold]Mysterious Cocoon[/gold] gains {IfUpgraded:show:2|1} experience.",
+	"STSBOSSANCIENTS-PIERCING_STRIKE.title": "Piercing Strike",
+	"STSBOSSANCIENTS-PIERCING_STRIKE.description": "Deal {Damage:diff()} damage to all enemies.\nApply [gold]Poison[/gold] equal to the damage dealt.",
+	"STSBOSSANCIENTS-RITUAL_STRIKE.title": "Ritual Strike",
+	"STSBOSSANCIENTS-RITUAL_STRIKE.description": "Deal {Damage:diff()} damage.\nGain {Power:diff()} [gold]Ritual[/gold].",
+	"STSBOSSANCIENTS-CHANT.title": "Chant",
+	"STSBOSSANCIENTS-CHANT.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {Power:diff()} [gold]Ritual[/gold]."
+}
