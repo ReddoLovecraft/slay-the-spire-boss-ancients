@@ -16,9 +16,9 @@ public sealed class SandsOfTime : StsBossAncientsRelic
 {
 	public override RelicRarity Rarity => RelicRarity.Ancient;
 
-	public override async Task AfterCardPlayed(PlayerChoiceContext context, CardPlay cardPlay)
+	public override async Task BeforeTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
 	{
-		if (cardPlay.Card.Owner != Owner)
+		if (side != CombatSide.Player)
 		{
 			return;
 		}
@@ -27,8 +27,12 @@ public sealed class SandsOfTime : StsBossAncientsRelic
 		{
 			return;
 		}
+		if (!CombatManager.Instance.IsPartOfPlayerTurn(Owner))
+		{
+			return;
+		}
 
-		decimal pct = cs.RoundNumber / 100m;
+		decimal pct = cs.RoundNumber / 10m;
 		if (pct <= 0m)
 		{
 			return;
@@ -46,7 +50,7 @@ public sealed class SandsOfTime : StsBossAncientsRelic
 			{
 				continue;
 			}
-			await CreatureCmd.Damage(context, e, amount, ValueProp.Unblockable | ValueProp.Unpowered, Owner.Creature, cardPlay.Card);
+			await CreatureCmd.Damage(choiceContext, e, amount, ValueProp.Unblockable | ValueProp.Unpowered, Owner.Creature, null);
 		}
 	}
 }

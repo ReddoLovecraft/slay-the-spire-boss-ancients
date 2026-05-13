@@ -30,7 +30,7 @@ namespace StsBossAncients.Scripts.Relics
 			}
 		}
 
-		private int _upgradeCount = 1;
+		private int _upgradeCount = 0;
 
 		public override Task AfterCombatEnd(CombatRoom room)
 		{

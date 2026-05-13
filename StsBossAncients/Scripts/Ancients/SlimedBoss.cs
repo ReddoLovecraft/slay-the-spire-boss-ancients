@@ -15,7 +15,7 @@ namespace StsBossAncients.Scripts.Ancients
 public class SlimedBoss : FirstFloorAncientModel
 {
 	// 选项按钮颜色
-	public override Color ButtonColor => new Color(0.216f, 0.606f, 0.12f, 1.0f);
+	public override Color ButtonColor => new Color(0.216f, 0.608f, 0.122f, 0.788f);
 	// 对话框颜色
 	public override Color DialogueColor => new Color(0.28f, 0.673f, 0.244f, 0.663f);
 	// 自定义场景的路径

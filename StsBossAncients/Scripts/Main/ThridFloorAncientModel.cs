@@ -13,8 +13,8 @@ public abstract class ThirdFloorAncientModel : CustomAncientModel
     // // 对话框颜色
     // public override Color DialogueColor => new(0.12f, 0.2f, 0.8f);
 
-    // 出现条件。这里是只能在第2幕出现
-    public override bool IsValidForAct(ActModel act) => act.ActNumber() == 2;
+    // 出现条件。这里是只能在第3幕出现
+    public override bool IsValidForAct(ActModel act) => act.ActNumber() == 3;
     // // 自定义场景的路径
     // public override string? CustomScenePath => "res://test/scenes/test_ancient.tscn";
     // // 自定义地图图标和轮廓的路径

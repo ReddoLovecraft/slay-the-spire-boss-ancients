@@ -1,0 +1,860 @@
+[gd_scene load_steps=72 format=3 uid="uid://diun0yueduv01"]
+
+[ext_resource type="Shader" uid="uid://bivp6lclatwo6" path="res://StsBossAncients/ArtWorks/VFX/vfx_stepped_shader_fire_add.tres" id="2_dispx"]
+[ext_resource type="Texture2D" uid="uid://dh1fqlgyowg2o" path="res://StsBossAncients/ArtWorks/VFX/triangle_noise_tile.png" id="3_r5jg1"]
+[ext_resource type="Texture2D" uid="uid://nhxthuewnj4t" path="res://StsBossAncients/ArtWorks/VFX/light.png" id="4_smy3g"]
+[ext_resource type="Texture2D" uid="uid://cj6gny5w8m6g6" path="res://StsBossAncients/ArtWorks/VFX/tileable_noise_2.png" id="5_q06yv"]
+[ext_resource type="Texture2D" uid="uid://dk5kqpb37scrk" path="res://StsBossAncients/ArtWorks/VFX/water_texture.png" id="6_3fvfc"]
+[ext_resource type="Texture2D" uid="uid://bsx1butb5uyjo" path="res://StsBossAncients/ArtWorks/VFX/sand_cloud.png" id="7_rwfy2"]
+[ext_resource type="Material" uid="uid://c4ycqv0gdxvmr" path="res://StsBossAncients/ArtWorks/VFX/canvas_item_material_additive_shared.tres" id="8_sax6g"]
+[ext_resource type="Texture2D" uid="uid://do8hvbh7kemyp" path="res://StsBossAncients/ArtWorks/VFX/short_grain_rice_particle.png" id="9_v8je3"]
+[ext_resource type="Script" uid="uid://cibmp1cwlbdv2" path="res://StsBossAncients/ArtWorks/VFX/little_light_script.gd" id="10_kjuq3"]
+[ext_resource type="Texture2D" uid="uid://c0rw0h6xv83t3" path="res://StsBossAncients/ArtWorks/Ancinets/History/awakened.png" id="11_l4cky"]
+[ext_resource type="Shader" uid="uid://bp00k5vocpvj0" path="res://StsBossAncients/ArtWorks/VFX/vfx_water_reflection_post.gdshader" id="12_dyy6j"]
+[ext_resource type="Texture2D" uid="uid://b5gdmfcos1gpq" path="res://StsBossAncients/ArtWorks/VFX/sand_pillar_base.png" id="13_qhev7"]
+[ext_resource type="Texture2D" uid="uid://drp50e7af7ap6" path="res://StsBossAncients/ArtWorks/VFX/miasma_cloud.png" id="14_ictlu"]
+[ext_resource type="Texture2D" uid="uid://djxed4q2ib3wl" path="res://StsBossAncients/ArtWorks/VFX/l_waterfall.png" id="15_i2adf"]
+[ext_resource type="Texture2D" uid="uid://cib21nvvdyakb" path="res://StsBossAncients/ArtWorks/VFX/r_waterfalls.png" id="16_tei0r"]
+[ext_resource type="Texture2D" uid="uid://4rb1jp0wvrx2" path="res://StsBossAncients/ArtWorks/Ancinets/Backgrounds/beyond/scene.png" id="17_beyond_scene_png"]
+[ext_resource type="Texture2D" uid="uid://bve83x8e0af1u" path="res://StsBossAncients/ArtWorks/Ancinets/Backgrounds/beyond/scene2.png" id="18_beyond_scene2_png"]
+[ext_resource type="Texture2D" uid="uid://dfc8kar4msdey" path="res://StsBossAncients/ArtWorks/Ancinets/Backgrounds/beyond/scene3.png" id="19_beyond_scene3_png"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_bg1"]
+atlas = ExtResource("17_beyond_scene_png")
+region = Rect2(2, 565, 1920, 1136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_bg2"]
+atlas = ExtResource("18_beyond_scene2_png")
+region = Rect2(2, 665, 1772, 719)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_floor"]
+atlas = ExtResource("18_beyond_scene2_png")
+region = Rect2(2, 1386, 1920, 453)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_ceiling"]
+atlas = ExtResource("17_beyond_scene_png")
+region = Rect2(2, 388, 1920, 175)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_mod2"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(2, 1339, 762, 633)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_mod1"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(1251, 753, 391, 478)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_mod3"]
+atlas = ExtResource("18_beyond_scene2_png")
+region = Rect2(1054, 31, 772, 632)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_mod4"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(1251, 1233, 438, 619)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_c1"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(487, 209, 306, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_c2"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(2, 176, 483, 801)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_c3"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(766, 1051, 483, 801)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_c4"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(795, 281, 306, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_campfireKindling"]
+atlas = ExtResource("18_beyond_scene2_png")
+region = Rect2(2, 144, 1050, 519)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_campfireGlow"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(2, 1095, 698, 242)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_s1"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(1644, 767, 101, 218)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_s2"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(1103, 431, 132, 269)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_s3"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(1691, 1434, 134, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_s4"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(1103, 702, 136, 347)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_s5"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(1691, 1578, 168, 326)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_f1"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(795, 101, 255, 178)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_f2"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(555, 998, 94, 95)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_f3"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(2, 2, 272, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_f4"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(1691, 1273, 113, 159)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_f5"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(1644, 987, 103, 244)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_i1"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(2, 979, 551, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_i2"]
+atlas = ExtResource("18_beyond_scene2_png")
+region = Rect2(2, 2, 947, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_i3"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(2, 118, 312, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_i4"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(1394, 1906, 474, 66)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_i5"]
+atlas = ExtResource("19_beyond_scene3_png")
+region = Rect2(766, 1854, 626, 118)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kp4l0"]
+shader = ExtResource("2_dispx")
+shader_parameter/OuterColor = Color(9.14484e-07, 0.206164, 0.269111, 1)
+shader_parameter/InnerColorStep = Vector2(0.975, 0.99)
+shader_parameter/Noise2Strength = 1.0
+shader_parameter/Noise2Scaling = Vector2(0.5, 0.5)
+shader_parameter/Noise2Panning = Vector2(0.05, 0.05)
+shader_parameter/Noise2Texture = ExtResource("6_3fvfc")
+shader_parameter/Noise1Strength = 1.0
+shader_parameter/Noise1Scaling = Vector2(0.5, 0.5)
+shader_parameter/Noise1Panning = Vector2(0.1, 0.1)
+shader_parameter/Noise1Texture = ExtResource("6_3fvfc")
+shader_parameter/InvertNoiseMask = true
+shader_parameter/NoiseMaskScale = Vector2(1, 2)
+shader_parameter/NoiseMaskOffset = Vector2(0, -0.63)
+shader_parameter/NoiseMask = ExtResource("4_smy3g")
+shader_parameter/Distortion2Scale = Vector2(1, 1)
+shader_parameter/Distortion2Panning = Vector2(0.045, 0.05)
+shader_parameter/Distortion2Texture = ExtResource("4_smy3g")
+shader_parameter/Distortion2Strength = 0.1
+shader_parameter/Distortion1Scale = Vector2(1, 1)
+shader_parameter/Distortion1Panning = Vector2(0.06, 0.05)
+shader_parameter/Distortion1Texture = ExtResource("3_r5jg1")
+shader_parameter/Distortion1Strength = 0.095
+shader_parameter/DistortionMaskScale = Vector2(1, 1.2)
+shader_parameter/DistortionMaskOffset = Vector2(0, -0.025)
+shader_parameter/DistortionMask = ExtResource("5_q06yv")
+shader_parameter/InnerColor = Color(0, 0, 0, 1)
+shader_parameter/OuterStep = Vector2(0.285, 0.99)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ke0qb"]
+shader = ExtResource("2_dispx")
+shader_parameter/OuterColor = Color(1.44392e-07, 0.228034, 0.164565, 1)
+shader_parameter/InnerColorStep = Vector2(0.975, 0.99)
+shader_parameter/Noise2Strength = 1.0
+shader_parameter/Noise2Scaling = Vector2(1, 1)
+shader_parameter/Noise2Panning = Vector2(0.05, 0.05)
+shader_parameter/Noise2Texture = ExtResource("6_3fvfc")
+shader_parameter/Noise1Strength = 1.0
+shader_parameter/Noise1Scaling = Vector2(1, 1)
+shader_parameter/Noise1Panning = Vector2(0.1, 0.1)
+shader_parameter/Noise1Texture = ExtResource("6_3fvfc")
+shader_parameter/InvertNoiseMask = true
+shader_parameter/NoiseMaskScale = Vector2(1, 2)
+shader_parameter/NoiseMaskOffset = Vector2(0, -0.63)
+shader_parameter/NoiseMask = ExtResource("4_smy3g")
+shader_parameter/Distortion2Scale = Vector2(1, 1)
+shader_parameter/Distortion2Panning = Vector2(0.045, 0.05)
+shader_parameter/Distortion2Texture = ExtResource("4_smy3g")
+shader_parameter/Distortion2Strength = 0.1
+shader_parameter/Distortion1Scale = Vector2(1, 1)
+shader_parameter/Distortion1Panning = Vector2(0.06, 0.05)
+shader_parameter/Distortion1Texture = ExtResource("3_r5jg1")
+shader_parameter/Distortion1Strength = 0.095
+shader_parameter/DistortionMaskScale = Vector2(1, 1.2)
+shader_parameter/DistortionMaskOffset = Vector2(0, -0.025)
+shader_parameter/DistortionMask = ExtResource("5_q06yv")
+shader_parameter/InnerColor = Color(0, 0, 0, 1)
+shader_parameter/OuterStep = Vector2(0.285, 0.99)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_gwy5x"]
+blend_mode = 1
+particles_animation = true
+particles_anim_h_frames = 4
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="Curve" id="Curve_alpha_ParticleProcessMaterial_cl8og"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_alpha_ParticleProcessMaterial_cl8og"]
+curve = SubResource("Curve_alpha_ParticleProcessMaterial_cl8og")
+
+[sub_resource type="Curve" id="Curve_y051v"]
+_limits = [-360.0, 360.0, 0.0, 1.0]
+_data = [Vector2(0, -192.733), 0.0, 0.0, 0, 0, Vector2(1, -128.563), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_frrug"]
+curve = SubResource("Curve_y051v")
+
+[sub_resource type="Gradient" id="Gradient_8hxy5"]
+offsets = PackedFloat32Array(0, 0.230912, 0.780261, 0.998138)
+colors = PackedColorArray(0, 0, 0, 1, 0.57902, 0.57902, 0.57902, 1, 0.415686, 0.415686, 0.415686, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_oxuda"]
+gradient = SubResource("Gradient_8hxy5")
+
+[sub_resource type="Curve" id="Curve_leqk8"]
+_data = [Vector2(0, 0.337644), 0.0, 0.0, 0, 0, Vector2(0.546125, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_fja2n"]
+curve = SubResource("Curve_leqk8")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_cl8og"]
+particle_flag_disable_z = true
+angle_min = 15.0
+angle_max = 15.0
+angle_curve = SubResource("CurveTexture_frrug")
+gravity = Vector3(50, 0, 0)
+scale_min = 4.0
+scale_max = 6.0
+scale_curve = SubResource("CurveTexture_fja2n")
+color = Color(0.569583, 0.725612, 0.75896, 1)
+color_ramp = SubResource("GradientTexture1D_oxuda")
+alpha_curve = SubResource("CurveTexture_alpha_ParticleProcessMaterial_cl8og")
+anim_offset_max = 1.0
+
+[sub_resource type="Curve" id="Curve_0viem"]
+_limits = [-360.0, 360.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.512915, 15.818), 0.0, 0.0, 0, 0, Vector2(0.998155, 18.7348), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_c35vc"]
+curve = SubResource("Curve_0viem")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_et5f7"]
+particle_flag_disable_z = true
+angle_min = -17.0
+angle_max = -17.0
+angle_curve = SubResource("CurveTexture_c35vc")
+gravity = Vector3(-50, 0, 0)
+scale_min = 4.0
+scale_max = 6.0
+scale_curve = SubResource("CurveTexture_fja2n")
+color = Color(0.568627, 0.72549, 0.760784, 1)
+color_ramp = SubResource("GradientTexture1D_oxuda")
+alpha_curve = SubResource("CurveTexture_alpha_ParticleProcessMaterial_cl8og")
+anim_offset_max = 1.0
+
+[sub_resource type="Gradient" id="Gradient_1wgss"]
+offsets = PackedFloat32Array(0, 0.258845, 1)
+colors = PackedColorArray(0.847059, 0.803922, 0.301961, 0, 1, 1, 1, 1, 0.780392, 0.65098, 0.403922, 0)
+
+[sub_resource type="Curve" id="Curve_0w33j"]
+_data = [Vector2(0, 0.321019), 0.0, 0.0, 0, 0, Vector2(0.502521, 0.507939), 0.0, 0.0, 0, 0, Vector2(1, 0.36242), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_vwgt8"]
+offsets = PackedFloat32Array(0, 0.411546, 0.994413)
+colors = PackedColorArray(0.34902, 0.34902, 0.34902, 1, 1, 1, 1, 1, 0.34902, 0.34902, 0.34902, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyond_fg"]
+atlas = ExtResource("17_beyond_scene_png")
+region = Rect2(2, 2, 1920, 384)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_nnunq"]
+frequency = 0.0022
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_ee6mk"]
+noise = SubResource("FastNoiseLite_nnunq")
+seamless = true
+normalize = false
+seamless_blend_skirt = 0.293
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7es4v"]
+shader = ExtResource("12_dyy6j")
+shader_parameter/noise = SubResource("NoiseTexture2D_ee6mk")
+shader_parameter/mask = ExtResource("13_qhev7")
+shader_parameter/speed = 1.0
+shader_parameter/strength = 0.015
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e1l2o"]
+shader = ExtResource("12_dyy6j")
+shader_parameter/noise = SubResource("NoiseTexture2D_ee6mk")
+shader_parameter/mask = ExtResource("15_i2adf")
+shader_parameter/speed = 0.5
+shader_parameter/strength = 0.005
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ldyt1"]
+shader = ExtResource("12_dyy6j")
+shader_parameter/noise = SubResource("NoiseTexture2D_ee6mk")
+shader_parameter/mask = ExtResource("16_tei0r")
+shader_parameter/speed = 0.5
+shader_parameter/strength = 0.005
+
+[node name="awakened" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 768.0
+offset_bottom = 432.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -330.0
+offset_top = -49.0
+offset_right = 2252.0
+offset_bottom = 1172.0
+texture = SubResource("AtlasTexture_beyond_bg1")
+expand_mode = 2
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -130.971
+offset_top = 49.884
+offset_right = 2252.0
+offset_bottom = 822.682
+texture = SubResource("AtlasTexture_beyond_bg2")
+expand_mode = 2
+
+[node name="TextureRect5" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -330.0
+offset_top = 685.105
+offset_right = 2252.0
+offset_bottom = 1172.0
+texture = SubResource("AtlasTexture_beyond_floor")
+expand_mode = 2
+
+[node name="TextureRect6" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -330.0
+offset_top = -49.0
+offset_right = 2252.0
+offset_bottom = 139.094
+texture = SubResource("AtlasTexture_beyond_ceiling")
+expand_mode = 2
+
+[node name="TextureRect7" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -4.56
+offset_top = 58.482
+offset_right = 1020.171
+offset_bottom = 738.846
+texture = SubResource("AtlasTexture_beyond_mod2")
+expand_mode = 2
+
+[node name="TextureRect8" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -148.453
+offset_top = 95.026
+offset_right = 377.36
+offset_bottom = 608.792
+texture = SubResource("AtlasTexture_beyond_mod1")
+expand_mode = 2
+
+[node name="TextureRect9" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1104.893
+offset_top = 64.931
+offset_right = 2143.072
+offset_bottom = 744.22
+texture = SubResource("AtlasTexture_beyond_mod3")
+expand_mode = 2
+
+[node name="TextureRect10" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1662.981
+offset_top = 71.38
+offset_right = 2252.0
+offset_bottom = 736.696
+texture = SubResource("AtlasTexture_beyond_mod4")
+expand_mode = 2
+
+[node name="TextureRect11" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -270.829
+offset_top = -2.783
+offset_right = 140.677
+offset_bottom = 822.682
+texture = SubResource("AtlasTexture_beyond_c1")
+expand_mode = 2
+
+[node name="TextureRect12" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 190.434
+offset_top = -16.755
+offset_right = 839.969
+offset_bottom = 844.179
+texture = SubResource("AtlasTexture_beyond_c2")
+expand_mode = 2
+
+[node name="TextureRect13" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1025.55
+offset_top = -16.755
+offset_right = 1675.084
+offset_bottom = 844.179
+texture = SubResource("AtlasTexture_beyond_c3")
+expand_mode = 2
+
+[node name="TextureRect14" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1778.633
+offset_top = -2.783
+offset_right = 2190.14
+offset_bottom = 822.682
+texture = SubResource("AtlasTexture_beyond_c4")
+expand_mode = 2
+
+[node name="TextureRect15" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 839.969
+offset_top = 614.166
+offset_right = 2252.0
+offset_bottom = 1172.0
+texture = SubResource("AtlasTexture_beyond_campfireKindling")
+expand_mode = 2
+
+[node name="TextureRect16" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 22.335
+offset_top = 301.393
+offset_right = 961.0
+offset_bottom = 561.5
+texture = SubResource("AtlasTexture_beyond_campfireGlow")
+expand_mode = 2
+
+[node name="TextureRect17" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 25.025
+offset_top = 5.816
+offset_right = 160.849
+offset_bottom = 240.128
+texture = SubResource("AtlasTexture_beyond_s1")
+expand_mode = 2
+
+[node name="TextureRect18" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 604.63
+offset_top = -13.531
+offset_right = 782.143
+offset_bottom = 275.597
+texture = SubResource("AtlasTexture_beyond_s2")
+expand_mode = 2
+
+[node name="TextureRect19" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 985.206
+offset_top = -14.606
+offset_right = 1165.408
+offset_bottom = 138.019
+texture = SubResource("AtlasTexture_beyond_s3")
+expand_mode = 2
+
+[node name="TextureRect20" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1376.541
+offset_top = -31.803
+offset_right = 1559.432
+offset_bottom = 341.161
+texture = SubResource("AtlasTexture_beyond_s4")
+expand_mode = 2
+
+[node name="TextureRect21" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1555.398
+offset_top = -32.878
+offset_right = 1781.323
+offset_bottom = 317.515
+texture = SubResource("AtlasTexture_beyond_s5")
+expand_mode = 2
+
+[node name="TextureRect22" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 61.334
+offset_top = 132.645
+offset_right = 404.256
+offset_bottom = 323.964
+texture = SubResource("AtlasTexture_beyond_f1")
+expand_mode = 2
+
+[node name="TextureRect23" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 632.871
+offset_top = 486.262
+offset_right = 759.281
+offset_bottom = 588.371
+texture = SubResource("AtlasTexture_beyond_f2")
+expand_mode = 2
+
+[node name="TextureRect24" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 809.039
+offset_top = 151.992
+offset_right = 1174.822
+offset_bottom = 274.522
+texture = SubResource("AtlasTexture_beyond_f3")
+expand_mode = 2
+
+[node name="TextureRect25" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1373.851
+offset_top = 288.495
+offset_right = 1525.813
+offset_bottom = 459.392
+texture = SubResource("AtlasTexture_beyond_f4")
+expand_mode = 2
+
+[node name="TextureRect26" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 2003.214
+offset_top = 142.319
+offset_right = 2141.727
+offset_bottom = 404.576
+texture = SubResource("AtlasTexture_beyond_f5")
+expand_mode = 2
+
+[node name="TextureRect27" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -129.626
+offset_top = 789.363
+offset_right = 611.354
+offset_bottom = 911.893
+texture = SubResource("AtlasTexture_beyond_i1")
+expand_mode = 2
+
+[node name="TextureRect28" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -100.041
+offset_top = 915.117
+offset_right = 1173.477
+offset_bottom = 1065.592
+texture = SubResource("AtlasTexture_beyond_i2")
+expand_mode = 2
+
+[node name="TextureRect29" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 692.042
+offset_top = 793.662
+offset_right = 1111.617
+offset_bottom = 853.852
+texture = SubResource("AtlasTexture_beyond_i3")
+expand_mode = 2
+
+[node name="TextureRect30" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1090.1
+offset_top = 760.342
+offset_right = 1727.531
+offset_bottom = 831.281
+texture = SubResource("AtlasTexture_beyond_i4")
+expand_mode = 2
+
+[node name="TextureRect31" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 991.93
+offset_top = 851.702
+offset_right = 1833.77
+offset_bottom = 978.532
+texture = SubResource("AtlasTexture_beyond_i5")
+expand_mode = 2
+
+[node name="water_reflection" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_kp4l0")
+position = Vector2(1122, 640)
+scale = Vector2(12.5, 12)
+texture = ExtResource("4_smy3g")
+
+[node name="water_reflection2" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_ke0qb")
+position = Vector2(344.00003, 448.99997)
+rotation = -0.47473
+scale = Vector2(12.5, 12)
+texture = ExtResource("4_smy3g")
+
+[node name="water_reflection3" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_kp4l0")
+position = Vector2(1577, 554)
+scale = Vector2(-12.5, 12)
+texture = ExtResource("4_smy3g")
+
+[node name="water_reflection4" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_ke0qb")
+position = Vector2(1934.0002, 706)
+rotation = -1.1956879
+scale = Vector2(-12.5, 12)
+texture = ExtResource("4_smy3g")
+
+[node name="fog3" type="GPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_gwy5x")
+position = Vector2(-250, 865)
+amount = 5
+texture = ExtResource("7_rwfy2")
+lifetime = 10.0
+preprocess = 100.0
+fixed_fps = 0
+visibility_rect = Rect2(-1000, -1000, 2000, 2000)
+local_coords = true
+draw_order = 0
+process_material = SubResource("ParticleProcessMaterial_cl8og")
+
+[node name="fog5" type="GPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_gwy5x")
+position = Vector2(-250, 671)
+amount = 5
+texture = ExtResource("7_rwfy2")
+lifetime = 10.0
+preprocess = 100.0
+fixed_fps = 0
+visibility_rect = Rect2(-1000, -1000, 2000, 2000)
+local_coords = true
+draw_order = 0
+process_material = SubResource("ParticleProcessMaterial_cl8og")
+
+[node name="fog4" type="GPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_gwy5x")
+position = Vector2(2107, 879.0001)
+rotation = 0.36533314
+amount = 5
+texture = ExtResource("7_rwfy2")
+lifetime = 10.0
+preprocess = 100.0
+fixed_fps = 0
+visibility_rect = Rect2(-1000, -1000, 2000, 2000)
+local_coords = true
+draw_order = 0
+process_material = SubResource("ParticleProcessMaterial_et5f7")
+
+[node name="stars" type="CPUParticles2D" parent="."]
+material = ExtResource("8_sax6g")
+position = Vector2(1003, 590)
+scale = Vector2(0.999997, 0.999997)
+amount = 10
+texture = ExtResource("9_v8je3")
+lifetime = 5.0
+preprocess = 5.0
+local_coords = true
+emission_shape = 3
+emission_rect_extents = Vector2(1500, 800)
+spread = 180.0
+gravity = Vector2(-1, 0)
+initial_velocity_min = 50.0
+initial_velocity_max = 50.0
+scale_amount_max = 2.0
+color = Color(0.886275, 0.733333, 0.278431, 0.443137)
+color_ramp = SubResource("Gradient_1wgss")
+
+[node name="light4" type="CPUParticles2D" parent="."]
+material = ExtResource("8_sax6g")
+position = Vector2(1432, 141)
+rotation = -0.36242
+skew = -0.000518441
+amount = 2
+texture = ExtResource("4_smy3g")
+lifetime = 3.0
+local_coords = true
+spread = 20.21
+gravity = Vector2(0, 0)
+scale_amount_min = 6.0
+scale_amount_max = 6.0
+scale_amount_curve = SubResource("Curve_0w33j")
+color = Color(0.0705882, 0.545098, 0.772549, 0.266667)
+color_ramp = SubResource("Gradient_vwgt8")
+script = ExtResource("10_kjuq3")
+
+[node name="light5" type="CPUParticles2D" parent="."]
+material = ExtResource("8_sax6g")
+position = Vector2(1618, 149)
+rotation = -0.36242
+skew = -0.000518441
+amount = 2
+texture = ExtResource("4_smy3g")
+lifetime = 3.0
+local_coords = true
+spread = 20.21
+gravity = Vector2(0, 0)
+scale_amount_min = 6.0
+scale_amount_max = 6.0
+scale_amount_curve = SubResource("Curve_0w33j")
+color = Color(0.0705882, 0.545098, 0.772549, 0.266667)
+color_ramp = SubResource("Gradient_vwgt8")
+script = ExtResource("10_kjuq3")
+
+[node name="light6" type="CPUParticles2D" parent="."]
+material = ExtResource("8_sax6g")
+position = Vector2(579, 160)
+rotation = -0.36242
+skew = -0.000518441
+amount = 2
+texture = ExtResource("4_smy3g")
+lifetime = 3.0
+local_coords = true
+spread = 20.21
+gravity = Vector2(0, 0)
+scale_amount_min = 6.0
+scale_amount_max = 6.0
+scale_amount_curve = SubResource("Curve_0w33j")
+color = Color(0.0705882, 0.545098, 0.772549, 0.266667)
+color_ramp = SubResource("Gradient_vwgt8")
+script = ExtResource("10_kjuq3")
+
+[node name="light7" type="CPUParticles2D" parent="."]
+material = ExtResource("8_sax6g")
+position = Vector2(393, 196)
+rotation = -0.36242
+skew = -0.000518441
+amount = 2
+texture = ExtResource("4_smy3g")
+lifetime = 3.0
+local_coords = true
+spread = 20.21
+gravity = Vector2(0, 0)
+scale_amount_min = 6.0
+scale_amount_max = 6.0
+scale_amount_curve = SubResource("Curve_0w33j")
+color = Color(0.0705882, 0.545098, 0.772549, 0.266667)
+color_ramp = SubResource("Gradient_vwgt8")
+script = ExtResource("10_kjuq3")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+self_modulate = Color(1, 1, 1, 0.7882353)
+layout_mode = 0
+offset_left = 284.00003
+offset_top = 614.00006
+offset_right = 372.00003
+offset_bottom = 702.00006
+rotation = -0.6329412
+scale = Vector2(10, 10)
+texture = ExtResource("11_l4cky")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -330.0
+offset_top = 759.268
+offset_right = 2252.0
+offset_bottom = 1172.0
+texture = SubResource("AtlasTexture_beyond_fg")
+expand_mode = 2
+
+[node name="light" type="CPUParticles2D" parent="."]
+material = ExtResource("8_sax6g")
+position = Vector2(56, 1048)
+rotation = -0.36242
+skew = -0.000518441
+amount = 2
+texture = ExtResource("4_smy3g")
+lifetime = 3.0
+local_coords = true
+spread = 20.21
+gravity = Vector2(0, 0)
+scale_amount_min = 20.21
+scale_amount_max = 20.21
+scale_amount_curve = SubResource("Curve_0w33j")
+color = Color(0.341704, 0.284539, 0.578448, 0.486275)
+color_ramp = SubResource("Gradient_vwgt8")
+script = ExtResource("10_kjuq3")
+
+[node name="light3" type="CPUParticles2D" parent="."]
+material = ExtResource("8_sax6g")
+position = Vector2(1053, 814)
+rotation = -0.36242
+skew = -0.000518441
+amount = 2
+texture = ExtResource("4_smy3g")
+lifetime = 3.0
+local_coords = true
+spread = 20.21
+gravity = Vector2(0, 0)
+scale_amount_min = 20.21
+scale_amount_max = 20.21
+scale_amount_curve = SubResource("Curve_0w33j")
+color = Color(0.0705882, 0.545098, 0.772549, 0.266667)
+color_ramp = SubResource("Gradient_vwgt8")
+script = ExtResource("10_kjuq3")
+
+[node name="light2" type="CPUParticles2D" parent="."]
+material = ExtResource("8_sax6g")
+position = Vector2(2091, 1025)
+rotation = -0.36242
+skew = -0.000518441
+amount = 2
+texture = ExtResource("4_smy3g")
+lifetime = 3.0
+local_coords = true
+spread = 20.21
+gravity = Vector2(0, 0)
+scale_amount_min = 20.21
+scale_amount_max = 20.21
+scale_amount_curve = SubResource("Curve_0w33j")
+color = Color(0.341704, 0.284539, 0.578448, 0.486275)
+color_ramp = SubResource("Gradient_vwgt8")
+script = ExtResource("10_kjuq3")
+
+[node name="water effect" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_7es4v")
+position = Vector2(919, 624)
+scale = Vector2(7.725, 5.227)
+texture = ExtResource("14_ictlu")
+
+[node name="water effect2" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_e1l2o")
+position = Vector2(295, 641)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("15_i2adf")
+
+[node name="water effect3" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_ldyt1")
+position = Vector2(1612, 637)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("16_tei0r")

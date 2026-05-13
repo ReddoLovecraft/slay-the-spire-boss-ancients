@@ -30,7 +30,7 @@ namespace StsBossAncients.Scripts.Relics
 				_penalty = value;
 			}
 		}
-
+		protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(1)];
 		[SavedProperty]
 		public bool UsedThisTurn
 		{

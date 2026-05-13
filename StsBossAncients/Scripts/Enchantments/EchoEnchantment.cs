@@ -12,7 +12,7 @@ public sealed class EchoEnchantment : CustomEnchantmentModel
 	public override bool HasExtraCardText => true;
 
 	private bool _activated;
-
+	protected override string? CustomIconPath => "res://StsBossAncients/ArtWorks/Enchants/ee.png";
 	public override Task AfterCardPlayed(PlayerChoiceContext context, CardPlay cardPlay)
 	{
 		if (cardPlay.Card.Enchantment != this)

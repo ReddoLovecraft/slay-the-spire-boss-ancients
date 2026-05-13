@@ -21,18 +21,8 @@ public sealed class CarryingCoil : StsBossAncientsRelic
 	{
 		HoverTipFactory.Static(StaticHoverTip.Channeling),
 		HoverTipFactory.FromOrb<LightningOrb>(),
-		HoverTipFactory.FromPower<StrengthPower>(),
-		HoverTipFactory.FromPower<DexterityPower>()
+		
 	};
-
-	private int _drawCountThisCombat;
-
-	public override Task BeforeCombatStart()
-	{
-		_drawCountThisCombat = 0;
-		return Task.CompletedTask;
-	}
-
 	public override async Task AfterCardPlayed(PlayerChoiceContext context, CardPlay cardPlay)
 	{
 		if (cardPlay.Card.Type != CardType.Skill)
@@ -50,27 +40,5 @@ public sealed class CarryingCoil : StsBossAncientsRelic
 
 		Flash();
 		await OrbCmd.Channel<LightningOrb>(new ThrowingPlayerChoiceContext(), Owner);
-	}
-
-	public override async Task AfterCardDrawn(PlayerChoiceContext choiceContext, CardModel card, bool fromHandDraw)
-	{
-		if (card.Owner != Owner)
-		{
-			return;
-		}
-		if (Owner.Creature.CombatState == null)
-		{
-			return;
-		}
-
-		_drawCountThisCombat++;
-		if (_drawCountThisCombat % 4 != 0)
-		{
-			return;
-		}
-
-		Flash();
-		await PowerCmd.Apply<StrengthPower>(Owner.Creature, 1, Owner.Creature, null);
-		await PowerCmd.Apply<DexterityPower>(Owner.Creature, 1, Owner.Creature, null);
 	}
 }

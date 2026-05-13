@@ -1,3 +1,4 @@
+using BaseLib.Extensions;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -21,7 +22,7 @@ public sealed class DeadBell : StsBossAncientsRelic
 
 	public override async Task AfterDamageGiven(PlayerChoiceContext choiceContext, Creature? dealer, DamageResult result, ValueProp props, Creature target, CardModel? cardSource)
 	{
-		if (dealer != Owner.Creature)
+		if (dealer != Owner.Creature || !props.IsPoweredAttack_())
 		{
 			return;
 		}
@@ -29,7 +30,7 @@ public sealed class DeadBell : StsBossAncientsRelic
 		{
 			return;
 		}
-		if (target.CurrentHp >= target.MaxHp)
+		if (target.CurrentHp + result.UnblockedDamage >= target.MaxHp)
 		{
 			return;
 		}

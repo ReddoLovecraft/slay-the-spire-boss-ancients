@@ -17,7 +17,7 @@ namespace StsBossAncients.Scripts.Cards;
 [Pool(typeof(QuestCardPool))]
 public sealed class TrainingStrike : CustomCardModel
 {
-	 public override string PortraitPath => $"res://ArtWorks/Cards/{Id.Entry}.png";
+	 public override string PortraitPath => $"res://StsBossAncients/ArtWorks/Cards/{Id.Entry}.png";
 	public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust };
 	protected override IEnumerable<IHoverTip> ExtraHoverTips => new[] { HoverTipFactory.Static(StaticHoverTip.Fatal) };
 	protected override IEnumerable<DynamicVar> CanonicalVars => new[] { new DamageVar(12m, ValueProp.Unpowered) };

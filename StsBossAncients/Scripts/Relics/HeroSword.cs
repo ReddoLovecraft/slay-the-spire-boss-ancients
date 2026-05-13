@@ -16,7 +16,7 @@ namespace StsBossAncients.Scripts.Relics
 	public sealed class HeroSword : StsBossAncientsRelic
 	{
 		protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<StrengthPower>()];
-		protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>(0m), new PowerVar<StrengthPower>("HalfPower", 0m)];
+		protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("Power", 0m), new DynamicVar("HalfPower", 0m)];
 		public override RelicRarity Rarity => RelicRarity.Ancient;
 
 		[SavedProperty]

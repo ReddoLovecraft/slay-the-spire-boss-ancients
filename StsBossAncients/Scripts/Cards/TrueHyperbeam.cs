@@ -18,8 +18,8 @@ namespace StsBossAncients.Scripts.Cards
 	[Pool(typeof(EventCardPool))]
 	public sealed class TrueHyperbeam : CustomCardModel
 	{
-		 public override string PortraitPath => $"res://ArtWorks/Cards/{Id.Entry}.png";
-		protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(34m, ValueProp.Move)];
+		 public override string PortraitPath => $"res://StsBossAncients/ArtWorks/Cards/{Id.Entry}.png";
+		protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(34m, ValueProp.Move),new EnergyVar(3)];
 
 		public TrueHyperbeam()
 			: base(0, CardType.Attack, CardRarity.Ancient, TargetType.AllEnemies)

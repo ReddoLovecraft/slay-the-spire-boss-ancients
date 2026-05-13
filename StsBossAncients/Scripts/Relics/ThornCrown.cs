@@ -23,11 +23,9 @@ namespace StsBossAncients.Scripts.Relics
 
 		public override async Task AfterObtained()
 		{
-			CardModel pain = ModelDb.Card<Pain>().ToMutable();
-			pain.Owner = Owner;
-			await CardPileCmd.Add(pain, PileType.Deck);
+			await CardPileCmd.AddCursesToDeck(Enumerable.Repeat(ModelDb.Card<Pain>(),1), base.Owner);
 		}
-
+        protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(2)];
 		public override async Task AfterRoomEntered(AbstractRoom room)
 		{
 			if (Owner.Creature.IsDead)

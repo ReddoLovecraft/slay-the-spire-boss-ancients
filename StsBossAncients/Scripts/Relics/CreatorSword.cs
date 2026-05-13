@@ -21,6 +21,10 @@ public sealed class CreatorSword : StsBossAncientsRelic
 		{
 			return;
 		}
+		if (!addedByPlayer)
+		{
+			return;
+		}
 		if (Owner.Creature.CombatState == null)
 		{
 			return;

@@ -15,7 +15,7 @@ public sealed class OneHeartEnchantment : CustomEnchantmentModel
 	public override bool HasExtraCardText => true;
 
 	private static int _triggerDepth;
-
+	protected override string? CustomIconPath => "res://StsBossAncients/ArtWorks/Enchants/ohe.png";
 	public override async Task AfterCardPlayed(PlayerChoiceContext context, CardPlay cardPlay)
 	{
 		if (cardPlay.Card.Enchantment != this)

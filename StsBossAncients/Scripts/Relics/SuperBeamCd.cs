@@ -16,12 +16,12 @@ namespace StsBossAncients.Scripts.Relics
 		protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromCard<TrueHyperbeam>()];
 		public override RelicRarity Rarity => RelicRarity.Ancient;
 		public override bool HasUponPickupEffect => true;
+		
 
 		public override async Task AfterObtained()
 		{
-			CardModel beam = ModelDb.Card<TrueHyperbeam>().ToMutable();
-			beam.Owner = Owner;
-			await CardPileCmd.Add(beam, PileType.Deck);
+			CardModel c = Owner.RunState.CreateCard<TrueHyperbeam>(Owner);
+			await CardPileCmd.Add(c, PileType.Deck);
 		}
 	}
 }

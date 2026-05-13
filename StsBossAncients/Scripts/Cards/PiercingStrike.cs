@@ -16,7 +16,7 @@ namespace StsBossAncients.Scripts.Cards;
 [Pool(typeof(QuestCardPool))]
 public sealed class PiercingStrike : CustomCardModel
 {
-	 public override string PortraitPath => $"res://ArtWorks/Cards/{Id.Entry}.png";
+	 public override string PortraitPath => $"res://StsBossAncients/ArtWorks/Cards/{Id.Entry}.png";
 	protected override IEnumerable<DynamicVar> CanonicalVars => new[] { new DamageVar(12m, ValueProp.Move) };
 
 	public PiercingStrike()

@@ -38,7 +38,7 @@ namespace StsBossAncients.Scripts.Relics
 				Flash();
 				await CreatureCmd.SetCurrentHp(Owner.Creature, LastTurnStartHp);
 			}
-			LastTurnStartHp = (int)Owner.Creature.CurrentHp;
+			LastTurnStartHp = current;
 		}
 	}
 }

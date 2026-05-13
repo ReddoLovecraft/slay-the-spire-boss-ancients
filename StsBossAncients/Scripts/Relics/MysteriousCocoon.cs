@@ -66,9 +66,8 @@ public sealed class MysteriousCocoon : StsBossAncientsRelic
 
 		for (int i = 0; i < 5; i++)
 		{
-			CardModel c = ModelDb.Card<TrainingStrike>().ToMutable();
-			c.Owner = Owner;
-			await CardPileCmd.Add(c, PileType.Deck, CardPilePosition.Bottom, null);
+			CardModel c = Owner.RunState.CreateCard<TrainingStrike>(Owner);
+			await CardPileCmd.Add(c, PileType.Deck);
 		}
 	}
 
@@ -100,13 +99,12 @@ public sealed class MysteriousCocoon : StsBossAncientsRelic
 
 		for (int i = 0; i < upgraded.Count; i++)
 		{
-			CardModel c = ModelDb.Card<PiercingStrike>().ToMutable();
-			c.Owner = Owner;
+			CardModel c = Owner.RunState.CreateCard<PiercingStrike>(Owner);
 			if (upgraded[i])
 			{
 				CardCmd.Upgrade(c);
 			}
-			await CardPileCmd.Add(c, PileType.Deck, CardPilePosition.Bottom, null);
+			await CardPileCmd.Add(c, PileType.Deck);
 		}
 
 		HasTransformed = true;

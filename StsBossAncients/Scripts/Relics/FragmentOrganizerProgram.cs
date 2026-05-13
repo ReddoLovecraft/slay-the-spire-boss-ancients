@@ -26,8 +26,7 @@ namespace StsBossAncients.Scripts.Relics
 				return;
 			}
 			Flash();
-			CardModel card = ModelDb.Card<Defragment>().ToMutable();
-			card.Owner = Owner;
+			CardModel card = Owner.Creature.CombatState.CreateCard<Defragment>(Owner);
 			await CardPileCmd.AddGeneratedCardsToCombat([card], PileType.Hand, addedByPlayer: true);
 		}
 	}

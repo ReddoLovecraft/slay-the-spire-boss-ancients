@@ -19,7 +19,7 @@ public sealed class MassarethScripture : StsBossAncientsRelic
 	public override RelicRarity Rarity => RelicRarity.Ancient;
 	public override bool ShowCounter => true;
 	public override int DisplayAmount => RitualCount;
-	//protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<RitualPower>()];
+	protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<RitualPower>()];
 
 	[SavedProperty]
 	public int RitualCount

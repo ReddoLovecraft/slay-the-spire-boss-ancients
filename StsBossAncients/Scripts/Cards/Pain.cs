@@ -13,7 +13,7 @@ namespace StsBossAncients.Scripts.Cards
 	[Pool(typeof(CurseCardPool))]
 	public sealed class Pain : CustomCardModel
 	{
-		 public override string PortraitPath => $"res://ArtWorks/Cards/{Id.Entry}.png";
+		 public override string PortraitPath => $"res://StsBossAncients/ArtWorks/Cards/{Id.Entry}.png";
 		public override int MaxUpgradeLevel => 0;
 		public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Unplayable };
 

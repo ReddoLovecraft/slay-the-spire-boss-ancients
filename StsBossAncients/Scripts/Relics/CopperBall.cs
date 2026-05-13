@@ -79,12 +79,18 @@ namespace StsBossAncients.Scripts.Relics
 				return;
 			}
 
+			if (Owner.Creature.CombatState == null)
+			{
+				return;
+			}
+
 			List<CardModel> cards = new List<CardModel>();
 			foreach (SerializableCard sc in StoredCards)
 			{
-				CardModel c = CardModel.FromSerializable(sc);
-				c.Owner = Owner;
-				cards.Add(c);
+				CardModel loaded = CardModel.FromSerializable(sc);
+				loaded.Owner = Owner;
+				CardModel combatCard = Owner.Creature.CombatState.CloneCard(loaded);
+				cards.Add(combatCard);
 			}
 			UsedThisCombat = true;
 			Flash();
@@ -99,7 +105,7 @@ namespace StsBossAncients.Scripts.Relics
 			}
 			bool hasPutIn = options.Any(o => o is CopperBallPutInOption);
 			bool hasTakeOut = options.Any(o => o is CopperBallTakeOutOption);
-			if (!hasPutIn)
+			if (!hasPutIn && StoredCards.Count == 0)
 			{
 				options.Add(new CopperBallPutInOption(player));
 			}
@@ -141,20 +147,22 @@ namespace StsBossAncients.Scripts.Relics
 			foreach (SerializableCard sc in StoredCards)
 			{
 				CardModel c = CardModel.FromSerializable(sc);
-				c.Owner = Owner;
+				if (!Owner.RunState.ContainsCard(c))
+				{
+					Owner.RunState.AddCard(c, Owner);
+				}
 				cards.Add(c);
 			}
 			StoredCards.Clear();
 			foreach (CardModel c in cards)
 			{
-				await CardPileCmd.Add(c, PileType.Deck, CardPilePosition.Bottom, null);
+				await CardPileCmd.Add(c, PileType.Deck);
 			}
 		}
 
 		private sealed class CopperBallPutInOption : RestSiteOption
 		{
 			public override string OptionId => "COPPER_BALL_PUT_IN";
-
 			public CopperBallPutInOption(Player owner)
 				: base(owner)
 			{

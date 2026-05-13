@@ -15,6 +15,7 @@ namespace StsBossAncients.Scripts.Relics
 	{
 		protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.ForEnergy(this)];
 		public override RelicRarity Rarity => RelicRarity.Ancient;
+		protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(1)];
 
 		public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
 		{

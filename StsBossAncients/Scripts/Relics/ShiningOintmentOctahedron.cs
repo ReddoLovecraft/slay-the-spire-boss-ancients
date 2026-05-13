@@ -10,6 +10,7 @@ using StsBossAncients.Scripts.Utils;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MegaCrit.Sts2.Core.Factories;
 
 namespace StsBossAncients.Scripts.Relics;
 
@@ -34,15 +35,10 @@ public sealed class ShiningOintmentOctahedron : StsBossAncientsRelic
 		List<CardModel> chosen = new List<CardModel>();
 		foreach (Player p in teammates)
 		{
-			CardModel? picked = (await CardSelectCmd.FromDeckGeneric(
-				player: p,
-				prefs: new CardSelectorPrefs(SelectionScreenPrompt, 1, 1)
-				{
-					RequireManualConfirmation = true,
-					Cancelable = false
-				},
-				filter: _ => true
-			)).FirstOrDefault();
+			CardModel picked;
+			List<CardModel> cards = CardFactory.GetDistinctForCombat(Owner,base.Owner.Character.CardPool.GetUnlockedCards(base.Owner.UnlockState, base.Owner.RunState.CardMultiplayerConstraint), base.Owner.Character.CardPool.GetUnlockedCards(base.Owner.UnlockState, base.Owner.RunState.CardMultiplayerConstraint).Count(),Owner.RunState.Rng.CombatCardGeneration).ToList();
+            CardSelectorPrefs prefs = new CardSelectorPrefs(base.SelectionScreenPrompt, 1);
+            picked = (await CardSelectCmd.FromSimpleGrid(choiceContext, cards, base.Owner, prefs)).FirstOrDefault();
 			if (picked != null)
 			{
 				chosen.Add(picked);

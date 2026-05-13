@@ -43,7 +43,7 @@ namespace StsBossAncients.Scripts.Relics
 				return;
 			}
 			DrawCounter++;
-			if (DrawCounter % 2 == 0)
+			if (DrawCounter % 3 == 0)
 			{
 				Flash();
 				await CardPileCmd.Draw(choiceContext, 1, Owner);

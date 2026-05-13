@@ -46,16 +46,14 @@ public sealed class BelieverSet : StsBossAncientsRelic
 
 		for (int i = 0; i < strikes.Count; i++)
 		{
-			CardModel c = ModelDb.Card<RitualStrike>().ToMutable();
-			c.Owner = Owner;
-			await CardPileCmd.Add(c, PileType.Deck, CardPilePosition.Bottom, null);
+			CardModel c = Owner.RunState.CreateCard<RitualStrike>(Owner);
+			await CardPileCmd.Add(c, PileType.Deck);
 		}
 
 		for (int i = 0; i < defends.Count; i++)
 		{
-			CardModel c = ModelDb.Card<Chant>().ToMutable();
-			c.Owner = Owner;
-			await CardPileCmd.Add(c, PileType.Deck, CardPilePosition.Bottom, null);
+			CardModel c = Owner.RunState.CreateCard<Chant>(Owner);
+			await CardPileCmd.Add(c, PileType.Deck);
 		}
 	}
 

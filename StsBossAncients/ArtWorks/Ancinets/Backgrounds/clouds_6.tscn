@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://b806p42m1nncm"]
+
+[ext_resource type="Texture2D" uid="uid://duq7dn3x2yy0n" path="res://StsBossAncients/ArtWorks/Ancinets/Backgrounds/cloud_sheet_architect.png" id="1_ja5oo"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_u8drx"]
+particles_animation = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 4
+particles_anim_loop = false
+
+[sub_resource type="Curve" id="Curve_gxndh"]
+_data = [Vector2(0.035416666, 0), 0.0, 0.0, 0, 0, Vector2(0.22812498, 1), 0.0, 0.0, 0, 0, Vector2(0.45416665, 0.6974628), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_yrori"]
+offsets = PackedFloat32Array(0, 0.137803, 0.351955, 0.523277, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.313726, 1, 1, 1, 1, 1, 1, 1, 0.678431, 1, 1, 1, 1)
+
+[node name="clouds5" type="CPUParticles2D"]
+material = SubResource("CanvasItemMaterial_u8drx")
+rotation = 0.7190757
+scale = Vector2(0.999997, 0.999997)
+amount = 10
+texture = ExtResource("1_ja5oo")
+lifetime = 14.0
+preprocess = 400.0
+local_coords = true
+emission_shape = 1
+emission_sphere_radius = 53.66
+gravity = Vector2(50, -5)
+orbit_velocity_min = 0.01
+orbit_velocity_max = 0.01
+angle_min = 20.0
+angle_max = 33.0
+scale_amount_min = 2.0
+scale_amount_max = 4.0
+scale_amount_curve = SubResource("Curve_gxndh")
+color_ramp = SubResource("Gradient_yrori")
+anim_offset_max = 1.0

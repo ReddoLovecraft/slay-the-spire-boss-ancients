@@ -2,6 +2,7 @@ using BaseLib.Abstracts;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
@@ -14,11 +15,12 @@ namespace StsBossAncients.Scripts.Cards;
 public sealed class RitualStrike : CustomCardModel
 {
 	protected override HashSet<CardTag> CanonicalTags => new HashSet<CardTag> { CardTag.Strike };
-	public override string PortraitPath => $"res://ArtWorks/Cards/{Id.Entry}.png";
+	protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<RitualPower>()];
+	public override string PortraitPath => $"res://StsBossAncients/ArtWorks/Cards/{Id.Entry}.png";
 	protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
 	{
 		new DamageVar(6m, ValueProp.Move),
-		new PowerVar<RitualPower>("Power", 1m)
+		new PowerVar<RitualPower>("Power", 2m)
 	};
 
 	public RitualStrike()
