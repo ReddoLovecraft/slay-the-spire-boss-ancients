@@ -33,7 +33,7 @@ public sealed class CreatorSword : StsBossAncientsRelic
 		Flash();
 		foreach (var p in CombatUtils.GetAliveTeammatePlayers(Owner))
 		{
-			await ForgeCmd.Forge(10m, p, this);
+			await ForgeCmd.Forge(7m, p, this);
 		}
 	}
 }

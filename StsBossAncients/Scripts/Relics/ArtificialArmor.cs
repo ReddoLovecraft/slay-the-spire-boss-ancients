@@ -35,7 +35,7 @@ namespace StsBossAncients.Scripts.Relics
 				return;
 			}
 			Flash();
-			await PowerCmd.Apply<PlatingPower>(Owner.Creature, 4, Owner.Creature, null);
+			await PowerCmd.Apply<PlatingPower>(Owner.Creature, 3, Owner.Creature, null);
 		}
 
 		public override async Task AfterCardChangedPiles(CardModel card, PileType oldPile, AbstractModel? source)
@@ -57,7 +57,7 @@ namespace StsBossAncients.Scripts.Relics
 				return;
 			}
 			Flash();
-			await CreatureCmd.GainBlock(Owner.Creature, 4, ValueProp.Unpowered, null);
+			await CreatureCmd.GainBlock(Owner.Creature, 3, ValueProp.Unpowered, null);
 		}
 	}
 }

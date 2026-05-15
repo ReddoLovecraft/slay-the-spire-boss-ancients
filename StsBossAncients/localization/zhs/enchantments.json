@@ -24,6 +24,6 @@
   "STSBOSSANCIENTS-ECHO_ENCHANTMENT.description": "首次打出后，在你的回合开始时将其打出(无论其在何处)。",
 
   "STSBOSSANCIENTS-SACRIFICE_ENCHANTMENT.title": "献祭",
-  "STSBOSSANCIENTS-SACRIFICE_ENCHANTMENT.extraCardText": "[gold]斩杀[/gold]时，将这张牌在本局游戏中造成的伤害永久增加[blue]5[/blue]点。",
-  "STSBOSSANCIENTS-SACRIFICE_ENCHANTMENT.description": "[gold]斩杀[/gold]时，将这张牌在本局游戏中造成的伤害永久增加[blue]5[/blue]点。"
+  "STSBOSSANCIENTS-SACRIFICE_ENCHANTMENT.extraCardText": "[gold]斩杀[/gold]时，将这张牌在本局游戏中造成的伤害永久增加[blue]3[/blue]点。",
+  "STSBOSSANCIENTS-SACRIFICE_ENCHANTMENT.description": "[gold]斩杀[/gold]时，将这张牌在本局游戏中造成的伤害永久增加[blue]3[/blue]点。"
 }

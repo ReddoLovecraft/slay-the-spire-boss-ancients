@@ -19,7 +19,7 @@ public sealed class Chant : CustomCardModel
 	protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
 	{
 		new BlockVar(5m, ValueProp.Unpowered),
-		new PowerVar<RitualPower>("Power", 2m)
+		new PowerVar<RitualPower>("Power", 1m)
 	};
 
 	public Chant()

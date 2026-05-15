@@ -24,6 +24,6 @@
   "STSBOSSANCIENTS-ECHO_ENCHANTMENT.description": "After being played for the first time, play it at the start of your turn (wherever it is).",
 
   "STSBOSSANCIENTS-SACRIFICE_ENCHANTMENT.title": "Sacrifice",
-  "STSBOSSANCIENTS-SACRIFICE_ENCHANTMENT.extraCardText": "On [gold]kill[/gold], permanently increase this card's damage by [blue]5[/blue] for this run.",
-  "STSBOSSANCIENTS-SACRIFICE_ENCHANTMENT.description": "On [gold]kill[/gold], permanently increase this card's damage by [blue]5[/blue] for this run."
+  "STSBOSSANCIENTS-SACRIFICE_ENCHANTMENT.extraCardText": "On [gold]kill[/gold], permanently increase this card's damage by [blue]3[/blue] for this run.",
+  "STSBOSSANCIENTS-SACRIFICE_ENCHANTMENT.description": "On [gold]kill[/gold], permanently increase this card's damage by [blue]3[/blue] for this run."
 }

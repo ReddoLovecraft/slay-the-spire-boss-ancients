@@ -74,7 +74,7 @@ public sealed class MassarethScripture : StsBossAncientsRelic
 				return Task.FromResult(false);
 			}
 			relic.Flash();
-			relic.RitualCount += 6;
+			relic.RitualCount += 5;
 			return Task.FromResult(true);
 		}
 	}

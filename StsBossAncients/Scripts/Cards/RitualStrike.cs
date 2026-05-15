@@ -20,7 +20,7 @@ public sealed class RitualStrike : CustomCardModel
 	protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
 	{
 		new DamageVar(6m, ValueProp.Move),
-		new PowerVar<RitualPower>("Power", 2m)
+		new PowerVar<RitualPower>("Power", 1m)
 	};
 
 	public RitualStrike()

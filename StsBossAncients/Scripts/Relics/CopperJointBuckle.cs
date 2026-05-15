@@ -26,7 +26,7 @@ public sealed class CopperJointBuckle : StsBossAncientsRelic
 			return amount;
 		}
 
-		decimal capped = Math.Min(3m, amount);
+		decimal capped = Math.Min(5m, amount);
 		_didReduce = capped != amount;
 		return capped;
 	}

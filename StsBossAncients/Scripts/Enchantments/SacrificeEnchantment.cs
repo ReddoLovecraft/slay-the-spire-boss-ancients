@@ -19,7 +19,7 @@ public sealed class SacrificeEnchantment : CustomEnchantmentModel
 		{
 			return 0m;
 		}
-		return Amount * 5m;
+		return Amount * 3m;
 	}
 	protected override string? CustomIconPath => "res://StsBossAncients/ArtWorks/Enchants/se2.png";
 	public override Task AfterDamageGiven(PlayerChoiceContext choiceContext, Creature? dealer, DamageResult result, ValueProp props, Creature target, CardModel? cardSource)

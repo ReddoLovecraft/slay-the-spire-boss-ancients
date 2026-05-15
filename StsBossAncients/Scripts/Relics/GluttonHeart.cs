@@ -20,7 +20,7 @@ namespace StsBossAncients.Scripts.Relics
 				return;
 			}
 
-		int add = (int)Math.Floor(target.MaxHp * 0.2m);
+		int add = (int)Math.Floor(target.MaxHp * 0.1m);
 		if (add <= 0)
 		{
 			return;

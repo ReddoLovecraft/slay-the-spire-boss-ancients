@@ -5,7 +5,7 @@
   "OPTION_COPPER_BALL_PUT_IN.description": "Choose [blue]2[/blue] cards to [orange]suspend[/orange].",
 
   "OPTION_MASSARETH_RITUAL.name": "Perform Ritual",
-  "OPTION_MASSARETH_RITUAL.description": "Gain +[blue]6[/blue] [gold]Ritual[/gold] at the start of each combat.",
+  "OPTION_MASSARETH_RITUAL.description": "Gain +[blue]5[/blue] [gold]Ritual[/gold] at the start of each combat.",
 
   "OPTION_SCRIBING_INSTRUMENT_COPY.name": "Scribe",
   "OPTION_SCRIBING_INSTRUMENT_COPY.description": "Choose [blue]1[/blue] [gold]Relic[/gold] you own, gain [blue]1[/blue] copy of it."
